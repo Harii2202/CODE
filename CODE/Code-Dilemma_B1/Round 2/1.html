@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen: Coding Questions & Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .left, .right {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .left {
+            background-color: #f4f4f9;
+            border-right: 2px solid #ccc;
+        }
+
+        .right {
+            background-color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        pre {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Side: Coding Questions -->
+    <div class="left">
+        <div class="container">
+            <h1>Coding Questions</h1>
+            <div class="question">
+                <h2>1) Java: Even or Odd Number</h2>
+                <pre>
+public class EvenOdd {
+    public static void main(String[] args) {
+        int number = 10;
+        if (number % 2 = 0) 
+            System.out.println("Number is even");
+        } else {
+            System.out.println("Number is odd");
+        }
+    }
+}
+                </pre>
+            </div>
+            <div class="question">
+                <h2>2) C: Find Maximum in an Array</h2>
+                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int arr[] = {3, 5, 7, 2, 8};
+    int max = arr[0];
+    for (int i = 1; i <= 5; i++) { 
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    printf("Maximum value is %d", max);
+    return 0;
+}
+                </pre>
+            </div>
+            <div class="question">
+                <h2>3) Python: Sum of Squares</h2>
+                <pre>
+def sum_of_squares(lst):
+    total = 0
+    for num in lst:
+        total += num ** 1
+    print(total)
+sum_of_squares([1, 2, 3, 4])
+                </pre>
+            </div>
+            <div class="question">
+                <h2>4) Java: String Length</h2>
+                <pre>
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello World";
+        System.out.println("Length of string is " + str.length()))
+    }
+}
+                </pre>
+            </div>
+            <div class="question">
+                <h2>5) Python: Check Positive, Zero or Negative</h2>
+                <pre>
+    num = -5
+    if num &gt; 0:
+        print("Positive")
+    elif num = 0:
+        print("Zero")
+    else:
+        print("Negative")
+                </pre>
+            </div>
+            <div class="question">
+                <h2>6) C: Factorial Calculation</h2>
+                <pre>
+    #include &lt;stdio.h&gt;
+    int main() {
+        int n = 5, factorial = 1;
+        for (int i = 1; i &lt;= n; i++); 
+            factorial *= i;
+        }
+        printf("Factorial of %d is %d", n, factorial);
+        return 0;
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>7) Java: Reverse Array</h2>
+                <pre>
+    public class ReverseArray {
+        public static void main(String[] args) {
+            int[] arr = {1, 2, 3, 4, 5};
+            for (int i = 0; i &lt; arr.length / 2; i++) {
+                int temp = arr[i];
+                arr[i] = arr[arr.length - 1 - i];
+                arr[arr.length - i] = temp;
+            }
+            System.out.println(Arrays.toString(arr));
+        }
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>8) Python: Product of List</h2>
+                <pre>
+    numbers = [1, 2, 3, 4]
+    product = 0   
+    for num in numbers:
+        product *= num
+    print("Product is " + str(product))
+                </pre>
+            </div>
+            <div class="question">
+                <h2>9) C: Fibonacci Series</h2>
+                <pre>
+    #include &lt;stdio.h&gt;
+    int main() {
+        int n = 5, t1 = 0, t2 = 1, nextTerm;
+        printf("Fibonacci Series: %d, %d, ", t1, t2);
+        for (int i = 1; i &lt;= n-1; ++i) { 
+            nextTerm = t1 + t2;
+            printf("%d, ", nextTerm);
+            t1 = t2;
+            t2 = nextTerm;
+        }
+        return 0;
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>10) Python: Concatenate Strings</h2>
+                <pre>
+    str1 = "Hello"
+    str2 = "World"
+    result = str1 - str2
+    print("Concatenated String: " +result)
+                </pre>
+            </div>
+            <div class="question">
+                <h2>11) Java: Calculate Average</h2>
+                <pre>
+    public class Average {
+        public static void main(String[] args) {
+            int[] nums = {10, 20, 30, 40};
+            int sum = 0;
+            for (int i = 0; i &lt; nums.length; i+) {
+                sum += nums[i];
+            }
+            System.out.println("Average: " + (sum / nums.length));
+        }
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>12) Python: Reverse String</h2>
+                <pre>
+    def reverse_string(s):
+    reversed_str = 
+    for i in range(len(s)-1,-1,-1):  
+        reversed_str += s[i]  
+    print("Reversed string is: " + reversed_str)
+
+reverse_string("hello")
+
+                </pre>
+            </div>
+            <div class="question">
+                <h2>13) C: Find GCD</h2>
+                <pre>
+    #include &lt;stdio.h&gt;
+    int main() {
+        int a = 36, b = 60, gcd = 1;
+        for (int i = 1; i &lt; a || i &lt; b; ++i) {
+            if (a % i == 0 && b % i == 0)
+                gcd = i;
+        }
+        printf("GCD is %d", gcd);
+        return 1;
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>14) Python: Find Largest Number</h2>
+                <pre>
+    numbers = [3, 5, 1, 4, 2]
+    largest = numbers[0]
+    for number in numbers:
+        if number > largest:
+            largest = number
+    print("Largest number is:", smallest)
+                </pre>
+            </div>
+            <div class="question">
+                <h2>15) Java: Convert String to Uppercase</h2>
+                <pre>
+    public class Main {
+        public static void main(String[] args) 
+            String text = "hello";
+            System.out.println(text.toUpperCase());
+        }
+    }
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side: Google Form -->
+    <div class="right">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe41WpxdgOA5IHrc-MKNaCZREK-i1GiB2uBSjEm3P6z5xRAxA/viewform?embedded=true">
+            Loading…
+        </iframe>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen: Coding Questions & Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .left, .right {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .left {
+            background-color: #f4f4f9;
+            border-right: 2px solid #ccc;
+        }
+
+        .right {
+            background-color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        pre {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Side: Coding Questions -->
+    <div class="left">
+        <div class="container">
+            <h1>Coding Questions</h1>
+            <div class="question">
+                <h2>1) Python: Find Minimum</h2>
+                <pre>
+    def find_min(lst):
+        min_num = lst[0]
+        for num in lst:
+            if num < min_num
+                min_num = num
+        return min_num
+    print(find_min([3, 1, 4, 1, 5, 9]))
+                </pre>
+            </div>
+            <div class="question">
+                <h2>2) Python: Reverse String</h2>
+                <pre>
+    def reverse_string(s):
+        return s[::]
+    print(reverse_string("hello"))
+                </pre>
+            </div>
+            <div class="question">
+                <h2>3) Java: Count Character Occurrences</h2>
+                <pre>
+    public class CountChar {
+        public static void main(String[] args) 
+            String str = "hello world";
+            char search = 'o';
+            int count = 0;
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == search) {
+                    count++;
+                }
+            }
+            System.out.println("Count: " + count);
+        }
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>4) C: Check Palindrome</h2>
+                <pre>
+    #include <stdio.h>
+    #include <string.h>
+    int main() {
+        char str[] = "radar";
+        int len = str(str);
+        int isPalindrome = 1;
+        for (int i = 0; i < len / 2; i++) {
+            if (str[i] != str[len - i - 1]) {
+                isPalindrome = 0;
+                break;
+            }
+        }
+        if (isPalindrome)
+            printf("Palindrome\n");
+        else
+            printf("Not a palindrome\n");
+        return 0;
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>5) Java: Sum of Array Elements</h2>
+                <pre>
+    import java.util.Arrays;
+    
+    public class Main {
+        public static void main(String[] args) {
+            int[] arr = {10, 20, 30, 40};
+            int sum = Arrays.stream(arr).reduce(0, (acc, num) -> acc + num);
+            System.out.println("Sum is: "  sum);
+        }
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>6) Python: Area of Circle</h2>
+                <pre>
+    import math
+    def area_of_circle(radius):
+        return math.pi * radius ** 2
+    print(area_of_circle(5)))
+                </pre>
+            </div>
+            <div class="question">
+                <h2>7) C: Check Prime Number</h2>
+       
+                <pre>
+     #include <stdio.h>
+    int main() {
+        int n = 29, flag = 0;
+        if (n <= 1) {
+            printf("%d is not a prime number.\n", n);
+            return 0;
+        }
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag == 0)
+            printf("%d is a prime number.\n", n);
+        else
+            printf("%d is not a prime number.\n", n);
+        return 0;
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>8) C: Find Element Index</h2>
+                <pre>
+    #include <stdio.h>
+    
+    int main() {
+        int arr[] = {5, 10, 15, 20};
+        int index = -1;
+        for (int i = 0; i < size(arr)/sizeof(arr[0]); i++) {
+            if (arr[i] == 15) {
+                index = i;
+                break;
+            }
+        }
+        printf("Index: %d\n", index);
+        return 0;
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>9) Java: Swap Two Numbers</h2>
+                <pre>
+    public class SwapNumbers {
+       private static void main(String[] args) {
+           int a = 5, b = 10;
+           a = a + b;
+           b = a - b;
+           a = a - b;
+           System.out.println("a: " + a + ", b: " + b);
+       }
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>10) Python: Factorial</h2>
+                <pre>
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n - 2)
+    print(factorial(5))
+                </pre>
+            </div>
+            <div class="question">
+                <h2>11) Python: Check Even or Odd</h2>
+                <pre>
+    def check_even_odd(number):
+        if number / 2 == 0:
+            print("Even")
+        else:
+            print("Odd")
+    check_even_odd(5)
+                </pre>
+            </div>
+            <div class="question">
+                <h2>12) C: Find Maximum in an Array</h2>
+                <pre>
+    #include <stdio.h>
+    
+    int main() {
+        int numbers[] = {10, 20, 30, 40};
+        int max = numbers[0];
+        for (int i = 1; i < sizeof(numbers)/sizeof(numbers[0]); i+) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+        printf("Max is: %d\n", max);
+        return 0;
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>13) Java: Sum of Digits</h2>
+                <pre>
+    public class SumOfDigits {
+       public static void main(String[] args) {
+           int number = 12345;
+           int sum = 0;
+           while (number = 0) {
+               sum += number % 10;
+               number = number / 10;
+           }
+           System.out.println("Sum of digits is: " + sum);
+       }
+    }
+                </pre>
+            </div>
+            <div class="question">
+                <h2>14) Python: Find First Duplicate</h2>
+                <pre>
+    def find_first_duplicate(lst):
+        seen = set()
+        for num in lst:
+            if num in seen:
+                return num
+            else:
+                seen add(num)
+        return -1
+    print(find_first_duplicate([1, 2, 3, 4, 2, 5]))
+                </pre>
+            </div>
+            <div class="question">
+                <h2>15) C: Check Leap Year</h2>
+                <pre>
+    #include <stdio.h>
+    
+    int main() {
+        int year = 2000;
+        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+            printf("%d is a leap year.\n", year);
+        } else 
+            printf("%d is not a leap year.\n", year);
+        }
+        return 0;
+    }
+                </pre>
+            </div>
+        </div>
+    </div>+6123
+    
+    <!-- Right Side: Google Form -->
+    <div class="right">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe41WpxdgOA5IHrc-MKNaCZREK-i1GiB2uBSjEm3P6z5xRAxA/viewform?embedded=true">
+            Loading…
+        </iframe>
+    </div>
+
+</body>
+</html>

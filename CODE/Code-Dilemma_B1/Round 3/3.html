@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 30px;
+        }
+        .question h3 {
+            color: #555;
+        }
+        .pseudocode {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Programming Questions</h1>
+
+        <div class="question">
+            <h3>1. Check if a Number is Prime</h3>
+            <p><b>Q1:</b> How do you take a number as input from the user?</p>
+            <p><b>Q2:</b> What condition needs to be checked to determine if a number is prime?</p>
+            <p><b>Q3:</b> How do you iterate through possible divisors of the number?</p>
+            <p><b>Q4:</b> How do you check if the number is divisible by any divisor?</p>
+            <p><b>Q5:</b> How do you conclude if a number is prime and display the result?</p>
+            <div class="pseudocode">
+                START<br>
+                &emsp;INPUT number<br>
+                &emsp;SET isPrime = True<br>
+                &emsp;FOR i from 2 to number - 1<br>
+                &emsp;&emsp;IF number % i == 0<br>
+                &emsp;&emsp;&emsp;SET isPrime = False<br>
+                &emsp;&emsp;&emsp;BREAK<br>
+                &emsp;&emsp;ENDIF<br>
+                &emsp;ENDFOR<br>
+                &emsp;IF isPrime == True<br>
+                &emsp;&emsp;PRINT "Prime"<br>
+                &emsp;ELSE<br>
+                &emsp;&emsp;PRINT "Not Prime"<br>
+                &emsp;ENDIF<br>
+                END
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2.Write a program to reverse a given number.</h3>
+            <p>Example:</p>
+            <p>Input: 1234</p>
+            <p>Output: 4321</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
